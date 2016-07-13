@@ -2283,7 +2283,7 @@ my.Map = Backbone.View.extend({
     var self = this;
     this.map = new L.Map(this.$map.get(0));
 
-    var mapUrl = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+    var mapUrl = "//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
     var osmAttribution = '© <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors';
     var bg = new L.TileLayer(mapUrl, {maxZoom: 19, attribution: osmAttribution});
     this.map.addLayer(bg);
